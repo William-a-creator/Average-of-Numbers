@@ -1,0 +1,25 @@
+# Average-of-Numberss
+
+import java.util.Scanner;
+
+public class AverageOfNumbers {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numberOfNum = 0;
+        int sum = 0;
+        while (true){
+            System.out.println("Give a number: ");
+            int num = Integer.valueOf(scanner.nextLine());
+            if ( num == 0 ){
+                break;
+            } else {
+                numberOfNum = numberOfNum +1;
+                sum = num + sum;
+            }
+            
+        }
+        double avg = (double)sum / numberOfNum;
+        System.out.println("Average of the numbers: " + avg );
+    }
+}
